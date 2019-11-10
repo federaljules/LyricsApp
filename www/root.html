@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="scripts/databaseHandler.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+
+    <title>My app</title>
+</head>
+<body class="padding white has-header has-footer" style="background:url(https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);background-size:cover;">
+    <div class="header grey-800">
+        <div class="left">
+            <button onclick="openMenu('myFirstMenu')" class="icon ion-navicon"></button>            <!--Menu button, Julius Kerminen 1800705-->
+        </div>
+        <h1 class="align-center">My app</h1>
+        <div class="right">
+            <button onclick="logout()" class="icon ion-log-out"></button>           <!--Log out button, Julius Kerminen 1800705-->
+        </div> 
+    </div>
+
+    <div class="menu white" id="myFirstMenu">
+        <button class="icon ion-android-arrow-back right" onclick="closeMenu('myFirstMenu')"></button>          <!--Menu for the root page, Julius Kerminen 1800705-->
+        <div class="space"></div>
+        <div class="space"></div>
+
+
+        <div class="list no-border">
+            <a class="item space-small">
+                <div class="left">
+                    <i class="icon ion-android-home"></i>                   <!--Home button and icon in menu, Julius Kerminen 1800705-->
+                </div>
+                <h1 onclick="openTab('home')" class="">Home</h1>            <!--Tried to get the menu item to work by opening tab but did not get it, Julius Kerminen 1800705-->
+            </a>
+            <a class="item space-small">
+                <div class="left">
+                    <i class="icon ion-help-circled"></i>                   <!--About button and icon in menu, Julius Kerminen 1800705-->
+                </div>
+                <h1 class="">About</h1>
+
+            </a>
+            <a class="item space-small">
+                <div class="left">
+                    <i class="icon ion-android-call"></i>                     <!--Contact button and icon in menu, Julius Kerminen 1800705-->
+                </div>
+                <h1 class="">Contact</h1>
+            </a>
+
+        </div>
+    </div>
+    
+<div class="space"></div>
+    
+
+<div class="footer grey-800 shadow tab">
+    <button class="icon ion-android-home active" onclick="openTab('home')">Home</button>
+    <button class="icon ion-help-circled" onclick="openTab('about')">About</button>         <!--created tabs, Julius Kerminen 1800705-->
+    <button class="icon ion-android-call" onclick="openTab('contact')">Contact</button>
+</div>
+
+
+
+
+<div class="tab-content active" id="home">
+    <div class="space"></div>
+
+    <h2 class="text-strong text-shadow padding text-white">This is the homepage of my app</h2>
+                                                                                                           <!--Tab content for home, Julius Kerminen 1800705-->
+    <div class="padding border-grey-400 shadow radius white-opacity-90">
+
+        <p>
+            This is my app!<br />
+            <br />
+
+            I made this app through trial and error and did not get it to work properly, but did my best so I could get something worth returning.
+
+        </p>
+
+
+
+
+    </div>   
+</div>
+    <div class="tab-content" id="about" >
+        <h2 class="text-strong text-shadow padding text-white">About me</h2>
+        <div class="padding border-grey-400 shadow radius white-opacity-90">
+            <div class="item full">
+                <img src="https://scontent-hel2-1.xx.fbcdn.net/v/t1.0-9/50054490_2320639778206372_7632341671664943104_o.jpg?_nc_cat=106&_nc_oc=AQn_tLGjBILOSfbLZoZoqpuE2FuAFC5HsPUUm-f-5Js8xrpeKF_kEVcVMO3h3vvgeLE&_nc_ht=scontent-hel2-1.xx&oh=b45549a3fa364fa779673a35cf121a09&oe=5E3F32A5">
+            </div>
+            <p>
+                                                                                                                                    <!--Tab content for about, Julius Kerminen 1800705-->
+                My name is Julius and I study at Laurea. This is my app that I could not get working the way I wanted and just ran out of time and skills.<br />
+                <br /> Atleast I got the structure almost right.
+            </p>
+        </div>
+      
+    </div>
+    
+    <div class="tab-content" id="contact">
+        <h2 class="text-strong text-shadow padding text-white">Contact me</h2>
+        <div class="list white-opacity-90">
+            <div class="item">
+                <h2>Julius Kerminen</h2>
+                <p class="text-grey-500">Student</p>
+            </div>
+            <div class="item">
+                                                                                                            <!--Tab content for contact, Julius Kerminen 1800705-->
+                <h2>Phone</h2>
+                <p class="text-grey-500">+3584861872</p>
+            </div>
+            <div class="item">
+                <h2>Mail</h2>
+                <p class="text-grey-500">julius.kerminen@gmail.com</p>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+
+</body>
+</html>

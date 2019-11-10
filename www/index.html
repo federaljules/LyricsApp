@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="scripts/databaseHandler.js"></script>
+    <script type="text/javascript" src="scripts/userHandler.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <title>Log in</title>
+</head>
+<body style="background:url(https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);background-size:cover;">
+    <!-- Here is the background image for the login screen , Julius Kerminen 1800705-->
+    <div class="space"></div>
+    <div class="space"></div>
+    <h1 style="font-size:24pt;" class="align-center text-strong text-white text-amber text-shadow">Log in</h1>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+
+    <!-- Here I create login inputs and buttons , Julius Kerminen 1800705-->
+    <div class="list white-opacity-50">
+        <div class="item">
+            <input id="user" type="text" placeholder="User">
+        </div>
+
+        <div class="item">
+            <input id="pw" type="password" placeholder="Password">
+        </div>
+
+        <div class="item">
+            <button onclick="addUser()" class="orange radius full">Sign up</button>
+        </div>
+
+        <div class="item">
+            <button onclick="login()" class="green radius full">Log in</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

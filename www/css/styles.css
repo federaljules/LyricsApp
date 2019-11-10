@@ -1,0 +1,153 @@
+﻿#container {
+    background-color: #003366;
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+}
+
+#bigWeather {
+    height: auto;
+    margin-bottom: 60px;
+}
+
+
+h1 {
+    font-size: 50pt;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    color: #CCCC99;
+    position: relative;
+}
+
+nav {
+    padding: 10px;
+    background-color: #363636;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+}
+
+h3 {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+ion-icon {
+    font-size: 30px;
+    padding: 15px 3px 0px 15px;
+}
+
+#icon {
+    position: initial;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0px 3px 0px 3px;
+}
+
+li {
+    list-style-type: none;
+    background-color: #CCCC99;
+    margin: 5px 0px 0px 0px;
+    border-radius: 10px;
+}
+
+    li > span {
+        font-size: 20pt;
+        font-family: 'Inconsolata', monospace;
+        color: #003366;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+
+
+#txtfield {
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#searchbar {
+    display: none;
+}
+
+#now {
+    font-size: 15pt;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    color: white;
+    margin-left: auto;
+    display: block;
+    text-align: center;
+}
+
+li {
+    text-align: left;
+}
+
+    li span {
+        display: inline-block;
+        bottom: +20px;
+        position: relative;
+        font-size: 16pt;
+    }
+
+
+
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 51, 102);
+    background: rgba(0, 51, 102, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+    #return-to-top i {
+        color: #fff;
+        margin: 0;
+        position: relative;
+        left: 16px;
+        top: 13px;
+        font-size: 19px;
+    }
+
+#searchbtn {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
+    color: #003366;
+    font-weight: 700;
+}
