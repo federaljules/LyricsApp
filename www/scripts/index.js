@@ -12,7 +12,7 @@ function addUser() {
 //Login function for the login button, Julius Kerminen 1800705
 function login() {
     var info = userInfo.askUser();
-    
+    window.location.assign('index.html')
 
 }
 //Logout function for the logout button in the root.hmtl page upper right corner, Julius Kerminen 1800705
